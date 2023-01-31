@@ -77,6 +77,6 @@ public class WebMvcConfig extends WebMvcConfigurationSupport{
         registry.addMapping("/**")
                 .allowedMethods("*")
                 .allowedHeaders("*")
-                .allowedOrigins(siteConfig.getCorsDomain().toArray(new String[siteConfig.getCorsDomain().size()]));
+                .allowedOrigins("*");
     }
 }
